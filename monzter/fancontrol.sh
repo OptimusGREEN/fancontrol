@@ -39,6 +39,10 @@ case "$1" in
         echo "Setting performance profile (high speeds)"
         set_fan_speeds 180 128 180 180 180
         ;;
+    high)
+        echo "Setting performance profile (high speeds)"
+        set_fan_speeds 220 220 220 220 220
+        ;;
     auto)
         echo "Setting automatic control"
         for i in {1..5}; do
@@ -64,6 +68,7 @@ case "$1" in
         echo "  quiet       - Lowest possible speeds"
         echo "  normal      - Balanced speeds"
         echo "  performance - High speeds"
+        echo "  high        - Highest speeds"
         echo "  auto        - Automatic control"
         echo "  status      - Show current settings"
         exit 1
