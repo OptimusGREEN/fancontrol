@@ -40,7 +40,7 @@ case "$1" in
         set_fan_speeds 180 128 180 180 180
         ;;
     high)
-        echo "Setting performance profile (high speeds)"
+        echo "Setting high profile (highest speeds)"
         set_fan_speeds 220 220 220 220 220
         ;;
     auto)
